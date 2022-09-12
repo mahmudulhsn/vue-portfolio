@@ -33,7 +33,7 @@ export default {
 
 <style scope>
 .main-content {
-  width: 94%;
+  width: 95%;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.2) 0%,
@@ -42,7 +42,7 @@ export default {
   );
 }
 .menu {
-  width: 6%;
+  width: 5%;
   border-radius: 35px 0px 0px 35px;
 }
 </style>
