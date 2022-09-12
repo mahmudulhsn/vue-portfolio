@@ -1,6 +1,16 @@
 
 <template>
-  <div class="main flex items-center justify-center h-screen text-white">
+  <div
+    class="
+      main
+      flex
+      items-center
+      justify-center
+      h-screen
+      text-white
+      bg-no-repeat bg-cover
+    "
+  >
     <div class="">
       <h1 class="text-center text-xl mb-10">Hello</h1>
       <h1 class="text-5xl">I Am A UI/UX Designer.</h1>
@@ -32,5 +42,41 @@ export default {
   content: "\25CF";
   color: #eeeeee;
   margin-left: 16px;
+}
+/* .main {
+  background: url("../../src/assets/img/bg.svg");
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.8) 34.37%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+} */
+.main {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.8) 34.37%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.main::before {
+  background-image: url("../../src/assets/img/bg.svg");
+
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 </style>

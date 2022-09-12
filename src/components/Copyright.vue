@@ -18,8 +18,10 @@ export default {
 
 <style scoped>
 .copyright {
+  position: relative;
   transform: rotate(270deg);
+  bottom: 60px;
   width: 130px;
-  margin: 0px 0 40px 0;
+  right: 20px;
 }
 </style>

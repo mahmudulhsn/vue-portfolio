@@ -1,20 +1,17 @@
 <template>
-  <div
-    class="
-      flex
-      h-screen
-      bg-no-repeat bg-cover bg-[url('../src/assets/img/bg.svg')]
-    "
-  >
+  <div class="flex h-screen">
     <div class="main-content">
       <RouterView />
     </div>
 
-    <div class="menu bg-menu-bg flex flex-col justify-between py-16">
-      <div>
-        <Menu />
+    <div class="main-menu">
+      <div class="menu h-screen flex flex-col bg-menu-bg">
+        <div class="logo text-center mt-6">LoGo</div>
+        <div class="nav">
+          <Menu />
+        </div>
+        <div class="copyright mb-6"><Copyright /></div>
       </div>
-      <div><Copyright /></div>
     </div>
   </div>
 </template>
@@ -34,15 +31,32 @@ export default {
 <style scope>
 .main-content {
   width: 95%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.8) 34.37%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
+}
+.main-menu {
+  width: 5%;
+  background: #000;
 }
 .menu {
-  width: 5%;
   border-radius: 35px 0px 0px 35px;
+}
+.logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  background: linear-gradient(
+    90deg,
+    #ff9e2b 0%,
+    rgba(255, 158, 43, 0.54) 47.92%,
+    rgba(255, 158, 43, 0.74) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  height: 10%;
+}
+.nav {
+  height: 82%;
 }
 </style>
