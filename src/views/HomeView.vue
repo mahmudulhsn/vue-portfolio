@@ -2,7 +2,7 @@
 <template>
   <div
     class="
-      main
+      home-page
       flex
       items-center
       justify-center
@@ -43,7 +43,7 @@ export default {
   color: #eeeeee;
   margin-left: 16px;
 }
-/* .main {
+/* .home-page {
   background: url("../../src/assets/img/bg.svg");
   background: linear-gradient(
     90deg,
@@ -52,7 +52,7 @@ export default {
     rgba(0, 0, 0, 0.2) 100%
   );
 } */
-.main {
+.home-page {
   width: 100%;
   height: 100%;
   min-width: 100%;
@@ -66,9 +66,8 @@ export default {
   );
 }
 
-.main::before {
-  background-image: url("../../src/assets/img/bg.svg");
-
+.home-page::before {
+  background-image: url("../../src/assets/img/bg-homepage.svg");
   background-size: cover;
   content: "";
   display: block;
