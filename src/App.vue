@@ -10,17 +10,22 @@
       <RouterView />
     </div>
 
-    <div class="menu bg-menu-bg flex">
-      <Menu />
+    <div class="menu bg-menu-bg flex flex-col justify-between py-16">
+      <div>
+        <Menu />
+      </div>
+      <div><Copyright /></div>
     </div>
   </div>
 </template>
 
 <script >
 import Menu from "./components/Menu.vue";
+import Copyright from "./components/Copyright.vue";
 export default {
   components: {
     Menu,
+    Copyright,
   },
 };
 </script>
