@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "tailwind": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "vite-svg-loader": "^3.6.0",
