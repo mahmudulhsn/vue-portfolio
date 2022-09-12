@@ -59,4 +59,10 @@ export default {
 .nav {
   height: 82%;
 }
+
+@media (max-height: 625px) and (max-width: 1370px) {
+  .logo {
+    display: none;
+  }
+}
 </style>

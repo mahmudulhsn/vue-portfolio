@@ -189,4 +189,25 @@ li {
   font-size: 13px;
   text-align: center;
 }
+
+@media (max-height: 625px) and (max-width: 1370px) {
+  .single-list {
+    width: 45px;
+    height: 38px;
+    margin: 16px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+  }
+}
 </style>
