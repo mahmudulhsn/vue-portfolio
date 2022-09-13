@@ -6,7 +6,6 @@
       flex
       items-center
       justify-center
-      h-screen
       text-white
       bg-no-repeat bg-cover
     "
@@ -54,7 +53,7 @@ export default {
 } */
 .home-page {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   min-width: 100%;
   min-height: 100%;
   position: relative;

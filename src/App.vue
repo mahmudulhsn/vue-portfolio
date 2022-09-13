@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen">
+  <div class="flex">
     <div class="main-content">
       <RouterView />
     </div>
@@ -35,6 +35,11 @@ export default {
 .main-menu {
   width: 5%;
   background: #000;
+  /* height: 100vh; */
+  position: fixed;
+  right: 0;
+  /* bottom: 0; */
+  height: 100vh;
 }
 .menu {
   border-radius: 35px 0px 0px 35px;

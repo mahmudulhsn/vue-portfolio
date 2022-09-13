@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@layer components {
+    .white-button {
+        @apply px-6 py-2 border border-white rounded-xl;
+    }
+
+    /* .white-button:hover {
+        @apply border-default text-default;
+    } */
+
+    .yellow-button {
+        @apply px-6 py-2 border border-default text-default rounded-xl;
+    }
+
+    /* .yellow-button:hover {
+        @apply bg-white text-default;
+    } */
+}

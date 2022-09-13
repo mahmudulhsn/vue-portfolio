@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'menu-bg': '#222222',
+        "default": '#FF9E2B',
       },
     },
   },
