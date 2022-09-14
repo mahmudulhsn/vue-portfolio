@@ -50,7 +50,7 @@
           <service-icon-active v-if="currentUrlName == 'Services'" />
           <service-icon v-else />
         </span>
-        <span> services </span>
+        <span> Services </span>
       </router-link>
     </li>
 
@@ -111,7 +111,7 @@ import ContactIcon from "../assets/img/icons/contact.svg";
 import HomeIconActive from "../assets/img/icons/home-active.svg";
 import AboutIconActive from "../assets/img/icons/about-active.svg";
 import ServiceIconActive from "../assets/img/icons/service-active.svg";
-import PortfolioIconActive from "../assets/img/icons/service-active.svg";
+import PortfolioIconActive from "../assets/img/icons/portfolio-active.svg";
 import ClientIconActive from "../assets/img/icons/client-active.svg";
 import ContactIconActive from "../assets/img/icons/contact-active.svg";
 export default {
