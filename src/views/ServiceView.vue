@@ -7,6 +7,12 @@
       <div class="mt-10">
         <ServiceList :services="services" />
       </div>
+      <p class="mt-4 text-2xl">
+        Are You Interested In Working With Me?
+        <a href="#" class="text-default underline underline-offset-2"
+          >Hire Me.</a
+        >
+      </p>
     </div>
   </div>
 </template>
