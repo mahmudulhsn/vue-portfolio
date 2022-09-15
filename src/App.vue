@@ -5,7 +5,7 @@
     </div>
 
     <div
-      class="menu-icons text-3xl absolute right-4 top-4 z-50 text-white"
+      class="menu-icons text-3xl fixed right-4 top-4 z-50 text-white"
       v-if="mobileMenu"
     >
       <div
@@ -44,31 +44,7 @@
       </div>
     </div>
 
-    <div
-      class="mobile-menu absolute h-screen bg-slate-800 right-0 w-48 text-white"
-      v-if="openMobileMenu"
-    >
-      <ul class="mt-20">
-        <li>
-          <router-link to="/"> <span>Home</span> </router-link>
-        </li>
-        <li>
-          <router-link to="/about"><span>About</span></router-link>
-        </li>
-        <li>
-          <router-link to="/services"><span>Service</span> </router-link>
-        </li>
-        <li>
-          <router-link to="/portfolio"><span>Portfolio</span></router-link>
-        </li>
-        <li>
-          <router-link to="/client"><span>Client</span></router-link>
-        </li>
-        <li>
-          <router-link to="/contact"><span>Contact</span></router-link>
-        </li>
-      </ul>
-    </div>
+    <MobileNav :openMobileMenu="openMobileMenu" />
 
     <div class="main-menu">
       <div class="menu h-screen flex flex-col bg-menu-bg">
@@ -85,10 +61,12 @@
 <script >
 import Menu from "./components/Menu.vue";
 import Copyright from "./components/Copyright.vue";
+import MobileNav from "./components/MobileNav.vue";
 export default {
   components: {
     Menu,
     Copyright,
+    MobileNav,
   },
   data() {
     return {
@@ -157,14 +135,6 @@ export default {
 }
 .nav {
   height: 82%;
-}
-
-.mobile-menu {
-  text-align: center;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .mobile-menu ul li {
