@@ -13,5 +13,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+@media (max-width: 640px) {
+  h1 {
+    text-align: center;
+  }
+}
 </style>

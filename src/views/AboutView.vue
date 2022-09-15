@@ -7,8 +7,10 @@
       <PageSubHeading :subHeading="subHeading" />
 
       <div class="about-me flex mt-10 space-x-8">
-        <div class="w-1/2"><img src="../assets/img/image.svg" alt="" /></div>
-        <div class="w-1/2 flex justify-content items-center">
+        <div class="about-me-image w-1/2">
+          <img src="../assets/img/image.svg" alt="" />
+        </div>
+        <div class="about-me-details w-1/2 flex justify-content items-center">
           <div>
             <h2 class="text-2xl mb-10">
               <span> Know</span> <br />
@@ -26,7 +28,7 @@
                 Velit fermentum.
               </p>
             </div>
-            <div class="w-3/4 flex justify-between">
+            <div class="about-button w-3/4 flex justify-between">
               <Button title="View Portfolio" extraClass="yellow-button" />
               <Button title="Download CV" extraClass="white-button" />
             </div>
@@ -281,5 +283,40 @@ export default {
   width: 100%;
   height: 100%;
   z-index: -2;
+}
+
+@media (max-width: 1370px) {
+  .about-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-me {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .about-me-image {
+    width: 100%;
+  }
+  .about-me-details {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .about {
+    width: 90%;
+  }
+  .about-button {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 </style>
