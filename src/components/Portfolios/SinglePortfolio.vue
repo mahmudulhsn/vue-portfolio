@@ -14,8 +14,8 @@
         w-72
         h-52
         absolute
-        top-6
-        left-6
+        top-5
+        left-5
         rounded-2xl
         flex flex-col
         justify-center
@@ -48,8 +48,21 @@ export default {
   /* display: block; */
   visibility: hidden;
   background: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  height: 80%;
 }
 .portfolio-details:hover .overlay {
   visibility: visible;
+}
+
+@media (max-width: 640px) {
+  .portfolio-details {
+    width: 74%;
+    margin: auto;
+  }
+  .overlay {
+    width: 90%;
+    height: 86%;
+  }
 }
 </style>
