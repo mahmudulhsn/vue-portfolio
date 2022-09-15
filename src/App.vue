@@ -178,4 +178,21 @@ export default {
     width: 100%;
   }
 }
+
+@media (max-height: 630px) {
+  .logo {
+    display: none;
+  }
+  .nav {
+    height: auto;
+  }
+  .menu {
+    border-radius: 35px 0px 0px 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright {
+    display: none;
+  }
+}
 </style>

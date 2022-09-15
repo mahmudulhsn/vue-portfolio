@@ -185,7 +185,7 @@ li {
 .single-list {
   width: 50px;
   height: 50px;
-  margin: 20px 0;
+  margin: 25px 0;
   font-size: 13px;
   text-align: center;
 }
@@ -194,7 +194,7 @@ li {
   .single-list {
     width: 45px;
     height: 38px;
-    margin: 16px 0;
+    margin: 22px 0;
     font-size: 13px;
     text-align: center;
   }
