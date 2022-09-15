@@ -1,7 +1,17 @@
 <template>
   <div class="services flex justify-center text-white bg-no-repeat bg-cover">
     <div
-      class="w-3/5 flex justify-center service flex-col mt-20 md:w-9/12 mb-10"
+      class="
+        lg:w-3/5
+        flex
+        justify-center
+        service
+        flex-col
+        mt-20
+        md:w-9/12
+        mb-10
+        sm:w-8/12
+      "
     >
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
@@ -117,5 +127,11 @@ export default {
 }
 .service {
   justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  .service {
+    width: 90%;
+  }
 }
 </style>

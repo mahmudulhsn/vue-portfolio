@@ -2,7 +2,7 @@
   <div
     class="about-section flex justify-center text-white bg-no-repeat bg-cover"
   >
-    <div class="w-3/5 flex justify-center flex-col about mt-20 md:w-9/12">
+    <div class="lg:w-3/5 flex justify-center flex-col about mt-20 md:w-9/12">
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
 

@@ -8,7 +8,9 @@
       bg-no-repeat bg-cover
     "
   >
-    <div class="w-3/5 flex justify-center portfolio flex-col mt-20 md:w-9/12">
+    <div
+      class="lg:w-3/5 flex justify-center portfolio flex-col mt-20 md:w-9/12"
+    >
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
 
