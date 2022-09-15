@@ -9,13 +9,21 @@
     "
   >
     <div
-      class="lg:w-3/5 flex justify-center portfolio flex-col mt-20 md:w-9/12"
+      class="
+        lg:w-3/5
+        flex flex-wrap
+        justify-center
+        portfolio
+        flex-col
+        mt-20
+        md:w-9/12
+      "
     >
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
 
-      <div class="tags flex justify-center space-x-4 mt-6">
-        <div>
+      <div class="tags flex flex flex-wrap justify-center space-x-4 mt-6">
+        <!-- <div>
           <span
             class="
               tag
@@ -30,7 +38,7 @@
           >
             All
           </span>
-        </div>
+        </div> -->
         <div v-for="tag in tags" :key="tag.id">
           <SingleTag :tag="tag" />
         </div>
@@ -63,18 +71,22 @@ export default {
       tags: [
         {
           id: 1,
-          name: "Website Design",
+          name: "All",
         },
         {
           id: 2,
-          name: "Web App Design",
+          name: "Website Design",
         },
         {
           id: 3,
-          name: "Apps Design",
+          name: "Web App Design",
         },
         {
           id: 4,
+          name: "Apps Design",
+        },
+        {
+          id: 5,
           name: "Graphics Design",
         },
       ],
@@ -82,7 +94,62 @@ export default {
         {
           id: 1,
           name: "Website Design",
-          image: "",
+          image: "../../src/assets/img/portfolios/portfolio-1.png",
+        },
+        {
+          id: 2,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-2.png",
+        },
+        {
+          id: 3,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-3.png",
+        },
+        {
+          id: 4,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-4.png",
+        },
+        {
+          id: 5,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-5.png",
+        },
+        {
+          id: 6,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-6.png",
+        },
+        {
+          id: 7,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-7.png",
+        },
+        {
+          id: 8,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-8.png",
+        },
+        {
+          id: 9,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-9.png",
+        },
+        {
+          id: 10,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-10.png",
+        },
+        {
+          id: 11,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-7.png",
+        },
+        {
+          id: 12,
+          name: "Website Design",
+          image: "../../src/assets/img/portfolios/portfolio-12.png",
         },
       ],
     };

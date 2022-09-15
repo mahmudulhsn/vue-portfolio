@@ -4,6 +4,7 @@
       tag
       px-3
       py-2
+      my-2
       border border-white
       rounded-2xl
       leading-loose
@@ -30,5 +31,8 @@ export default {
   color: #2d373d;
   background: #ff9e2b;
   border: 1px solid #ff9e2b;
+}
+.tag {
+  bottom: 10;
 }
 </style>
