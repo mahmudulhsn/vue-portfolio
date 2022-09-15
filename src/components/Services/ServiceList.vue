@@ -1,6 +1,7 @@
 <template>
   <div
     class="
+      service-list
       grid
       xl:grid-cols-3
       lg:grid-cols-2
@@ -31,5 +32,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+@media (max-width: 1370px) {
+  .service-list {
+    gap: 35px;
+  }
+}
 </style>

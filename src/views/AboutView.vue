@@ -286,9 +286,12 @@ export default {
 }
 
 @media (max-width: 1370px) {
-  .about-button {
-    width: 100%;
+  .about {
+    width: 85%;
   }
+  /* .about-button {
+    width: 100%;
+  } */
 }
 
 @media (max-width: 768px) {

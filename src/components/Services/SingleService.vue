@@ -37,6 +37,7 @@ export default {
   border-top-right-radius: 50px;
   background: rgba(255, 255, 255, 0.1);
   color: rgba(238, 238, 238, 0.9);
+  width: 100%;
 }
 .service:hover {
   color: #2d373d;

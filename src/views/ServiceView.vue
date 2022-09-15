@@ -134,4 +134,10 @@ export default {
     width: 90%;
   }
 }
+
+@media (max-width: 1370px) {
+  .service {
+    width: 85%;
+  }
+}
 </style>
