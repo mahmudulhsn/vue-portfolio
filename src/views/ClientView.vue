@@ -39,25 +39,29 @@
           </slide>
 
           <template #addons>
-            <Pagination />
-            <!-- <Navigation /> -->
+            <div class="navigation flex justify-between">
+              <div class="prev">
+                <button
+                  @click="next"
+                  class="float-left px-3 py-1 bg-white text-black rounded"
+                >
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </div>
+              <div class="pagination">
+                <Pagination />
+              </div>
+              <div class="next">
+                <button
+                  @click="prev"
+                  class="float-right px-3 py-1 bg-white text-black rounded"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
           </template>
         </carousel>
-
-        <div class="navigation">
-          <button
-            @click="next"
-            class="float-left px-3 py-1 bg-white text-black rounded"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            @click="prev"
-            class="float-right px-3 py-1 bg-white text-black rounded"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -160,6 +164,18 @@ export default {
   justify-content: flex-start;
 }
 
+.carousel__pagination-button {
+  margin: var(--vc-pgn-margin);
+  width: 10px;
+  height: 10px;
+  border-radius: var(--vc-pgn-height);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--vc-pgn-background-color);
+}
+.navigation {
+  margin-top: 40px;
+}
 @media (max-width: 640px) {
   .service {
     width: 90%;
