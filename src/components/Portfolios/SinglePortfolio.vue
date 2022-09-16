@@ -2,7 +2,7 @@
   <div class="relative portfolio-details">
     <div class="single-portfolio">
       <img
-        class="m-auto mb-6 border p-1 rounded-3xl"
+        class="m-auto mb-6 border p-1 rounded-3xl w-full"
         :src="portfolio.image"
         alt=""
       />
@@ -11,8 +11,6 @@
     <div
       class="
         overlay
-        w-72
-        h-52
         absolute
         top-5
         left-5
@@ -46,13 +44,34 @@ export default {
 <style scoped>
 .overlay {
   /* display: block; */
-  visibility: hidden;
+  visibility: visible;
   background: rgba(0, 0, 0, 0.8);
-  width: 80%;
-  height: 80%;
+  width: 89%;
+  height: 85%;
 }
 .portfolio-details:hover .overlay {
   visibility: visible;
+}
+
+@media (max-width: 1370px) {
+  .overlay {
+    width: 82%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 770px) {
+  .single-portfolio {
+    width: 100%;
+  }
+  .portfolio-details {
+    width: 80%;
+    margin: auto;
+  }
+  .overlay {
+    width: 93%;
+    height: 92%;
+  }
 }
 
 @media (max-width: 640px) {

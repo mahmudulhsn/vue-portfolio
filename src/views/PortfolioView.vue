@@ -40,7 +40,9 @@
           </span>
         </div> -->
         <div v-for="tag in tags" :key="tag.id">
-          <SingleTag :tag="tag" />
+          <div class="tag-div">
+            <SingleTag :tag="tag" />
+          </div>
         </div>
       </div>
 
@@ -191,5 +193,12 @@ export default {
 }
 .portfolio {
   justify-content: flex-start;
+}
+.cards {
+  overflow: auto;
+}
+
+.tag-div {
+  margin-bottom: 20px;
 }
 </style>
