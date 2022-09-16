@@ -15,6 +15,50 @@
     >
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
+
+      <div>
+        <carousel
+          ref="carousel"
+          :settings="settings"
+          :breakpoints="breakpoints"
+        >
+          <slide class="card__wrapper" v-for="item in items" :key="item.id">
+            <TheCard
+              :name="`${item.lvl} lvl`"
+              :title="item.title"
+              :imgUrl="item.img"
+              :link="`/${item.alias}`"
+            >
+              <template v-slot:body>
+                {{ item.descr }}
+              </template>
+              <template v-slot:footer>
+                <CardFooter :info="item.info" />
+              </template>
+            </TheCard>
+          </slide>
+
+          <template #addons>
+            <Pagination />
+            <!-- <Navigation /> -->
+          </template>
+        </carousel>
+
+        <div class="navigation">
+          <button
+            @click="next"
+            class="float-left px-3 py-1 bg-white text-black rounded"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            @click="prev"
+            class="float-right px-3 py-1 bg-white text-black rounded"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -22,17 +66,56 @@
 <script>
 import PageTitle from "../components/Helper/PageHeading.vue";
 import PageSubHeading from "../components/Helper/PageSubHeading.vue";
+import items from "../Seeds/Items.js";
+
+import TheCard from "../components/Carousel/TheCard.vue";
+import CardFooter from "../components/Carousel/CardFooter.vue";
+
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Navigation, Slide, Pagination } from "vue3-carousel";
 export default {
   components: {
     PageTitle,
     PageSubHeading,
+    TheCard,
+    Carousel,
+    Slide,
+    Navigation,
+    CardFooter,
+    Pagination,
   },
   data() {
     return {
       title: "Client's Says",
       subHeading:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue libero eleifend ullamcorper vestibulum. velit enim risus purus eu molestie lobortis pellentesque.",
+      items: items,
+      currentSlide: 0,
+
+      // corousel
+      settings: {
+        itemsToShow: 2,
+        wrapAround: true,
+        snapAlign: "start",
+      },
+      breakpoints: {
+        300: {
+          itemsToShow: 2,
+        },
+        700: {
+          itemsToShow: 2,
+        },
+      },
     };
+  },
+
+  methods: {
+    next() {
+      this.$refs.carousel.next();
+    },
+    prev() {
+      this.$refs.carousel.prev();
+    },
   },
 };
 </script>
@@ -68,6 +151,10 @@ export default {
   width: 100%;
   height: 100%;
   z-index: -2;
+}
+.navigation {
+  margin: 10px;
+  padding: 10px;
 }
 .service {
   justify-content: flex-start;
