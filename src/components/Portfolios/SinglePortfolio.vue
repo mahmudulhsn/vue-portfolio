@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .overlay {
   /* display: block; */
-  visibility: visible;
+  visibility: hidden;
   background: rgba(0, 0, 0, 0.8);
   width: 89%;
   height: 85%;

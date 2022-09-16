@@ -23,12 +23,7 @@
           :breakpoints="breakpoints"
         >
           <slide class="card__wrapper" v-for="item in items" :key="item.id">
-            <TheCard
-              :name="`${item.lvl} lvl`"
-              :title="item.title"
-              :imgUrl="item.img"
-              :link="`/${item.alias}`"
-            >
+            <TheCard :item="item">
               <template v-slot:body>
                 {{ item.descr }}
               </template>
@@ -42,7 +37,7 @@
             <div class="navigation flex justify-between">
               <div class="prev">
                 <button
-                  @click="next"
+                  @click="prev"
                   class="float-left px-3 py-1 bg-white text-black rounded"
                 >
                   <i class="fa-solid fa-arrow-left"></i>
@@ -53,7 +48,7 @@
               </div>
               <div class="next">
                 <button
-                  @click="prev"
+                  @click="next"
                   class="float-right px-3 py-1 bg-white text-black rounded"
                 >
                   <i class="fa-solid fa-arrow-right"></i>
@@ -104,7 +99,7 @@ export default {
       },
       breakpoints: {
         300: {
-          itemsToShow: 2,
+          itemsToShow: 1,
         },
         700: {
           itemsToShow: 2,
@@ -163,7 +158,9 @@ export default {
 .service {
   justify-content: flex-start;
 }
-
+.carousel__pagination-button--active {
+  background-color: #ff9e2b !important;
+}
 .carousel__pagination-button {
   margin: var(--vc-pgn-margin);
   width: 10px;
@@ -171,7 +168,7 @@ export default {
   border-radius: var(--vc-pgn-height);
   border: 0;
   cursor: pointer;
-  background-color: var(--vc-pgn-background-color);
+  background-color: #eeeeee;
 }
 .navigation {
   margin-top: 40px;
