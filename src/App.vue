@@ -44,7 +44,9 @@
       </div>
     </div>
 
-    <MobileNav :openMobileMenu="openMobileMenu" />
+    <transition name="mobile">
+      <MobileNav :openMobileMenu="openMobileMenu" />
+    </transition>
 
     <div class="main-menu">
       <div class="menu h-screen flex flex-col bg-menu-bg">
@@ -78,6 +80,12 @@ export default {
   created() {
     window.addEventListener("resize", this.checkScreen);
     this.checkScreen();
+  },
+
+  watch: {
+    $route() {
+      this.openMobileMenu = false;
+    },
   },
 
   methods: {
@@ -194,5 +202,19 @@ export default {
   .copyright {
     display: none;
   }
+}
+
+.mobile-enter-active,
+.mobile-leave-active {
+  transition: all 0.5s ease;
+}
+.mobile-enter {
+  transform: translateX(250px);
+}
+.mobile-enter-to {
+  transform: translateX(0);
+}
+.mobile-leave-to {
+  transform: translateX(300px);
 }
 </style>
