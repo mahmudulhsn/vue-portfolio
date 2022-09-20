@@ -15,8 +15,17 @@
     >
       <PageTitle :title="title" />
       <PageSubHeading :subHeading="subHeading" />
-      <div class="grid grid-cols-2 gap-6 mt-16">
-        <div class="info flex flex-col justify-between">
+      <div
+        class="
+          grid
+          lag:grid-cols-2
+          lg:gap-6
+          mt-16
+          md:grid-cols-1
+          xl:grid-cols-2
+        "
+      >
+        <div class="info flex flex-col justify-between md:mb-8">
           <div>
             <p class="text-3xl leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
@@ -26,12 +35,10 @@
           <div class="grid grid-cols-2 gap-2">
             <div class="py-8 px-6 call-me flex flex-col rounded items-center">
               <div class="">
-                <div class="">
+                <div class="skew-before">
                   <img
                     class="my-6"
-                    height="50"
-                    width="50"
-                    src="../../src/assets/img/icons/client/call-us.svg"
+                    src="../../src/assets/img/icons/call-me.svg"
                     alt=""
                   />
                 </div>
@@ -55,9 +62,7 @@
                 <div class="">
                   <img
                     class="my-6"
-                    height="50"
-                    width="50"
-                    src="../../src/assets/img/icons/client/email-us.svg"
+                    src="../../src/assets/img/icons/email-me.svg"
                     alt=""
                   />
                 </div>
@@ -67,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="form p-4 rounded">
+        <div class="form p-4 rounded md:mb-8">
           <h1>Send Me a Message</h1>
           <div class="form-group my-2">
             <input
