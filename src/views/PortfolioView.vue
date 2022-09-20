@@ -47,7 +47,7 @@
       </div>
 
       <div class="cards">
-        <PortfolioList :portfolios="portfolios" />
+        <PortfolioList :portfolios="filteredPortfolios" />
       </div>
     </div>
   </div>
@@ -65,11 +65,14 @@ export default {
     SingleTag,
     PortfolioList,
   },
+
   data() {
     return {
       title: "Portfolio",
       subHeading:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      filteredPortfolios: [],
+      filteredTag: "All",
       tags: [
         {
           id: 1,
@@ -96,66 +99,105 @@ export default {
         {
           id: 1,
           name: "Website Design",
+          category: "Website Design",
           image: "../../src/assets/img/portfolios/portfolio-1.png",
         },
         {
           id: 2,
           name: "Website Design",
+          category: "Web App Design",
           image: "../../src/assets/img/portfolios/portfolio-2.png",
         },
         {
           id: 3,
           name: "Website Design",
+          category: "Graphics Design",
           image: "../../src/assets/img/portfolios/portfolio-3.png",
         },
         {
           id: 4,
           name: "Website Design",
+          category: "Website Design",
           image: "../../src/assets/img/portfolios/portfolio-4.png",
         },
         {
           id: 5,
           name: "Website Design",
+          category: "Apps Design",
           image: "../../src/assets/img/portfolios/portfolio-5.png",
         },
         {
           id: 6,
           name: "Website Design",
+          category: "Apps Design",
           image: "../../src/assets/img/portfolios/portfolio-6.png",
         },
         {
           id: 7,
           name: "Website Design",
+          category: "Web App Design",
           image: "../../src/assets/img/portfolios/portfolio-7.png",
         },
         {
           id: 8,
           name: "Website Design",
+          category: "Website Design",
           image: "../../src/assets/img/portfolios/portfolio-8.png",
         },
         {
           id: 9,
           name: "Website Design",
+          category: "Web App Design",
           image: "../../src/assets/img/portfolios/portfolio-9.png",
         },
         {
           id: 10,
           name: "Website Design",
+          category: "Apps Design",
           image: "../../src/assets/img/portfolios/portfolio-10.png",
         },
         {
           id: 11,
           name: "Website Design",
+          category: "Graphics Design",
           image: "../../src/assets/img/portfolios/portfolio-7.png",
         },
         {
           id: 12,
           name: "Website Design",
+          category: "Apps Design",
           image: "../../src/assets/img/portfolios/portfolio-12.png",
         },
       ],
     };
   },
+
+  created() {
+    this.filteredPortfolios = this.portfolios;
+  },
+
+  mounted() {
+    this.emitter.on("filteredPortfolio", (tagName) => {
+      this.filteredTag = tagName;
+      if (this.filteredTag == "All") {
+        this.filteredPortfolios = this.portfolios;
+      } else {
+        this.filteredPortfolios = this.portfolios.filter((portfolio) => {
+          return portfolio.category.includes(this.filteredTag);
+        });
+      }
+    });
+  },
+
+  // computed () {
+  //   filteredPortfolio(tagName) {
+  //       return this.portfolios.filter((portfolio) => {
+  //         return portfolio.category.includes(tagName);
+  //       });
+
+  //       console.log(test);
+  //     };
+  // }
 };
 </script>
 

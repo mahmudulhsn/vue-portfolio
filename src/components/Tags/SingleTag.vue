@@ -1,5 +1,6 @@
 <template>
   <span
+    @click="findByTagName(tag.name)"
     class="
       tag
       px-3
@@ -21,6 +22,11 @@ export default {
     tag: {
       type: Object,
       default: "",
+    },
+  },
+  methods: {
+    findByTagName(tagName) {
+      this.emitter.emit("filteredPortfolio", tagName);
     },
   },
 };

@@ -9,6 +9,7 @@
     "tailwind": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "mitt": "^3.0.0",
     "vite-svg-loader": "^3.6.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5",
