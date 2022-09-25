@@ -98,20 +98,20 @@ export default {
       portfolios: [
         {
           id: 1,
-          name: "Website Design",
+          name: "Real Estate Website UI/UX Design",
           category: "Website Design",
           image: "../../src/assets/img/portfolios/portfolio-1.png",
         },
         {
           id: 2,
-          name: "Website Design",
-          category: "Web App Design",
+          name: "Fashion Studio Website UI/UX Design",
+          category: "Website Design",
           image: "../../src/assets/img/portfolios/portfolio-2.png",
         },
         {
           id: 3,
-          name: "Website Design",
-          category: "Graphics Design",
+          name: "Health Care Application",
+          category: "Apps Design",
           image: "../../src/assets/img/portfolios/portfolio-3.png",
         },
         {

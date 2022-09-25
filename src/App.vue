@@ -50,7 +50,7 @@
 
     <div class="main-menu">
       <div class="menu h-screen flex flex-col bg-menu-bg">
-        <div class="logo text-center mt-6">LoGo</div>
+        <div class="logo text-center mt-6">KHAN</div>
         <div class="nav">
           <Menu />
         </div>
