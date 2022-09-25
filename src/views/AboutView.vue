@@ -8,7 +8,7 @@
 
       <div class="about-me flex mt-10 space-x-8">
         <div class="about-me-image w-1/2">
-          <img src="../assets/img/image.svg" alt="" />
+          <img src="../assets/img/image.svg" alt="Image Not Found" />
         </div>
         <div class="about-me-details w-1/2 flex justify-content items-center">
           <div>
@@ -18,14 +18,10 @@
             </h2>
             <div class="mb-10 text-md">
               <p class="mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-                augue eu ultrices id orci. Amet mattis egestas ac, amet, ac.
-                Velit fermentum volutpat adipiscing vehicula aliquam integer
+                Hello there! My name is <b>Md. Parvez Khan.</b> I am a UI/UX Designer, and i'm very passionate and dedicated to my work.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-                augue eu ultrices id orci. Amet mattis egestas ac, amet, ac.
-                Velit fermentum.
+                With 3.5 years experience as a professional a UI/UX Designer, I have acquired skills and knowledge necessary to make your project a success.
               </p>
             </div>
             <div class="about-button w-3/4 flex justify-between">
@@ -79,117 +75,149 @@ export default {
     return {
       title: "About Me",
       subHeading:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue libero eleifend ullamcorper vestibulum. velit enim risus purus eu molestie lobortis pellentesque.",
+        "Here you will find all my information. What I am doing in my professional life. I hope I can help you with what you want.",
       experiences: [
         {
           id: 1,
           date: "10/2020 - running",
           companyDetails: {
-            companyName: "Software Tech Ltd.",
+            companyName: "AriSaf Tech Ltd.",
             position: "UI/UX Designer",
-            website: "www.website.com ",
+            website: "https://arisaftech.com/",
           },
           achievements: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus.",
+                "Redesigned AST Japanese website. (AriSaf Tech Ltd.)",
             },
             {
               id: 2,
               title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "Salesta for Asahi (SaaS) UI/UX Design (In house product). It is Asahi customer control management system.",
             },
             {
               id: 3,
               title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+                "B-sky (Web application) UI/UX Design (Wireframe).",
+            },
+            {
+              id: 3,
+              title:
+                "Say Halal (Mobile application) UI/UX Design - Halal/Haram detection application for Muslim Community.",
             },
           ],
-          place: "Dhaka, Bangladesh.",
+          place: "Mirpur DOHS, Dhaka, Bangladesh.",
         },
 
         {
           id: 2,
           date: "04/2019 - 10/2020",
           companyDetails: {
-            companyName: "Software Tech Ltd.",
-            position: "UI/UX Designer",
-            website: "www.website.com ",
+            companyName: "AriSaf Tech Ltd.",
+            position: "Graphics & UI/UX Designer",
+            website: "https://arisaftech.com/",
           },
           achievements: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus.",
+                "Piena. (e-commerce website) (https://item.rakuten.co.jp/piena-ac/aabsal-mess027/)",
             },
             {
               id: 2,
               title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "DICE for IBM (Desktop application) UI/UX Design. (Sub contract).",
             },
-            {
-              id: 3,
-              title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
-            },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
           ],
-          place: "Dhaka, Bangladesh.",
+          place: "Baridhara DOHS, Dhaka, Bangladesh.",
         },
 
         {
           id: 2,
           date: "11/2018 - 03/2019",
           companyDetails: {
-            companyName: "Software Tech Ltd.",
-            position: "UI/UX Designer",
-            website: "www.website.com ",
+            companyName: "WebHawks IT Ltd.",
+            position: "Graphics & UI/UX Designer (Internship)",
+            website: "https://www.webhawksit.com/",
           },
           achievements: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus.",
+                "DIM (Desktop app) UI/UX Design (Wireframe).",
             },
             {
               id: 2,
               title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "Learned about UI/UX design & Graphics Design.",
             },
-            {
-              id: 3,
-              title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
-            },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
           ],
-          place: "Dhaka, Bangladesh.",
+          place: "Mirpur DOHS, Dhaka, Bangladesh.",
         },
       ],
       projects: [
-        {
+      {
           id: 1,
-          date: "06/2021 - 09/2021",
+          date: "08/2022 - 09/2022",
           projectInfo: {
-            projectName: "Mobile Application Project",
+            projectName: "Real Estate Website",
             position: "UI/UX Designer",
-            website: "www.website.com ",
+            website: "https://www.behance.net/gallery/153164925/Real-Estate-Website-Case-Study",
           },
           projectDetails: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus. Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "It is a real estate company project. Their main job is to help people find their desired home very easily and help to find good housing at very low cost. One of the advantages of this website is that you can choose a noise free enviroment. You can choose the house of your choice at your convenience.",
             },
+            // {
+            //   id: 2,
+            //   title:
+            //     "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+            // },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
+          ],
+        },
+
+        {
+          id: 1,
+          date: "06/2021 - 09/2021",
+          projectInfo: {
+            projectName: "HealthCare (Mobile application project)",
+            position: "UI/UX Designer",
+            website: "https://healthcare.arisaftech.com/",
+          },
+          projectDetails: [
             {
-              id: 2,
+              id: 1,
               title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "With this app, people can easily buy medicine at home, get services from the doctor at home, test Covid-19 register, see the results and register for the vaccine.",
             },
-            {
-              id: 3,
-              title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
-            },
+            // {
+            //   id: 2,
+            //   title:
+            //     "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+            // },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
           ],
         },
 
@@ -197,26 +225,26 @@ export default {
           id: 2,
           date: "02/2021 - 03/2021",
           projectInfo: {
-            projectName: "E-Commerce Website.",
-            position: "UI/UX Designer",
-            website: "www.website.com ",
+            projectName: "E-commerce Website",
+            position: "Graphics & UI/UX Design",
+            website: "https://twopenny.com.bd/",
           },
           projectDetails: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus. Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "This a online platform E-commerce website. It is specially made for Bangladeshi citizens to buy his/her apparel drees & gadget.",
             },
-            {
-              id: 2,
-              title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
-            },
-            {
-              id: 3,
-              title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
-            },
+            // {
+            //   id: 2,
+            //   title:
+            //     "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+            // },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
           ],
         },
 
@@ -224,26 +252,26 @@ export default {
           id: 2,
           date: "04/2020 - 09/2020",
           projectInfo: {
-            projectName: "Mobile Application Project.",
+            projectName: "Proyojan.it (Mobile Application Project)",
             position: "UI/UX Designer",
-            website: "www.website.com ",
+            website: "https://play.google.com/store/apps/details?id=com.proyojanit.proyojanapp",
           },
           projectDetails: [
             {
               id: 1,
               title:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus est laoreet justo, eu massa phasellus. Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+                "Proyojan is a digital adertising platform and digitak working area for the public. it is specially made for Bangladeshi citizens to earn money by completing some work. We promote on;ine start up and corporat business ads here at cheap price. All of our members participate in verstile job opportunities.",
             },
-            {
-              id: 2,
-              title:
-                "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
-            },
-            {
-              id: 3,
-              title:
-                "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
-            },
+            // {
+            //   id: 2,
+            //   title:
+            //     "Accumsan, lectus curabitur vestibulum vel. Faucibus leo mattis blandit.",
+            // },
+            // {
+            //   id: 3,
+            //   title:
+            //     "Vestibulum lectus interdum dui, risus tempor. Praesent eget magna nullam et, vitae.",
+            // },
           ],
         },
       ],

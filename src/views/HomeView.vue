@@ -11,14 +11,14 @@
     "
   >
     <div class="">
-      <h1 class="text-center text-xl mb-10">Hello</h1>
-      <h1 class="text-5xl">I Am A UI/UX Designer.</h1>
+      <h1 class="text-center text-xl mb-10">Hi</h1>
+      <h1 class="text-5xl">I Am A <b>UI/UX Designer.</b></h1>
       <ul class="flex mt-10 justify-center skills">
-        <li class="px-3 py-2">App Design</li>
-        <li class="px-3 py-2">Saas Design</li>
-        <li class="px-3 py-2">Website Design</li>
+        <li class="px-3 py-2 text-lg">App Design</li>
+        <li class="px-3 py-2  text-lg">Saas Design</li>
+        <li class="px-3 py-2  text-lg">Website Design</li>
       </ul>
-
+      
       <div class="text-center mt-5">
         <SocialIcons />
       </div>
