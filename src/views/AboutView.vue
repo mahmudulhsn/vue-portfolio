@@ -8,7 +8,7 @@
 
       <div class="about-me flex mt-10 space-x-8">
         <div class="about-me-image w-1/2">
-          <img src="../assets/img/image.svg" alt="" />
+          <img :src="myImage" alt="My Image" />
         </div>
         <div class="about-me-details w-1/2 flex justify-content items-center">
           <div>
@@ -78,6 +78,7 @@ export default {
   data() {
     return {
       title: "About Me",
+      myImage: "src/assets/img/image.svg",
       subHeading:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue libero eleifend ullamcorper vestibulum. velit enim risus purus eu molestie lobortis pellentesque.",
       experiences: [
