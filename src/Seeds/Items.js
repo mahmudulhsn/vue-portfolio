@@ -1,3 +1,5 @@
+import clintOne from "../../src/assets/img/clients/client-1.png";
+import clintTwo from "../../src/assets/img/clients/client-2.png";
 export default [
   {
     id: 1,
@@ -6,7 +8,7 @@ export default [
     media: "Linkedin",
     comments:
       "The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.",
-    img: "../../src/assets/img/clients/client-1.png",
+    img: clintOne,
     rating: 4,
   },
   {
@@ -16,7 +18,7 @@ export default [
     media: "Linkedin",
     comments:
       "The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.",
-    img: "../../src/assets/img/clients/client-2.png",
+    img: clintTwo,
     rating: 4,
   },
   {
@@ -26,7 +28,7 @@ export default [
     media: "Linkedin",
     comments:
       "The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.",
-    img: "../../src/assets/img/clients/client-1.png",
+    img: clintOne,
     rating: 3,
   },
 ];
