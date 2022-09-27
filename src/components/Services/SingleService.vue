@@ -32,9 +32,11 @@ export default {
     }
   },
 
+
   computed: {
+    
     imageUrl() {
-      return `src/assets/img/icons/services/${this.service.icon}` 
+      return `src/assets/img/services/${this.service.icon}` 
     }
   },
 };
