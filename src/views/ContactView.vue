@@ -172,4 +172,13 @@ textarea {
 .btn {
   background: #ff9e2b;
 }
+
+@media (max-width: 640px) {
+  .contact {
+    width: 90%;
+  }
+  .form {
+    margin-top: 20px;
+  }
+}
 </style>

@@ -200,27 +200,10 @@ export default {
       }
     });
   },
-
-  // computed () {
-  //   filteredPortfolio(tagName) {
-  //       return this.portfolios.filter((portfolio) => {
-  //         return portfolio.category.includes(tagName);
-  //       });
-
-  //       console.log(test);
-  //     };
-  // }
 };
 </script>
 
 <style>
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
 .portfolio-section {
   background: #000;
   width: 100%;
@@ -228,7 +211,6 @@ export default {
   min-width: 100%;
   min-height: 100vh;
   position: relative;
-  /* background: linear-gradient( 90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 34.37%, rgba(0, 0, 0, 0.2) 100% ); */
   opacity: 0.99;
   color: #eee;
 }
