@@ -12,7 +12,7 @@
       cursor-pointer
     "
   >
-    <div class="service-icon"><img :src="imgUrl" alt="Logo" /></div>
+    <div class="service-icon"><img :src="service.icon" alt="Logo" /></div>
     <h1 class="text-lg my-4 font-bold">{{ service.title }}</h1>
     <p class="text-sm">{{ service.description }}</p>
   </div>
@@ -20,21 +20,12 @@
 
 <script>
 export default {
-  data() {
-    return {
-      imgUrl: ''
-    }
-  },
   props: {
     service: {
       type: Object,
       default: {},
     },
   },
-  created () {
-    this.imgUrl = new URL(this.service.icon, import.meta.url).href;
-  },
-
 };
 </script>
 

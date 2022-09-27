@@ -48,42 +48,42 @@ export default {
         {
           id: 1,
           title: "UI/UX Design",
-          icon: "../../assets/img/icons/services/ui-ux.png",
+          icon: "../../src/assets/img/icons/services/ui-ux.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 2,
           title: "Website Design",
-          icon: "../../assets/img/icons/services/website.png",
+          icon: "../../src/assets/img/icons/services/website.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 3,
           title: "Web App Design",
-          icon: "../../assets/img/icons/services/web-apps.png",
+          icon: "../../src/assets/img/icons/services/web-apps.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 4,
           title: "App Design",
-          icon: "../../assets/img/icons/services/smartphone.png",
+          icon: "../../src/assets/img/icons/services/smartphone.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 5,
           title: "Creative Design",
-          icon: "../../assets/img/icons/services/creativity.png",
+          icon: "../../src/assets/img/icons/services/creativity.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 6,
           title: "Graphics Design",
-          icon: "../../assets/img/icons/services/graphics-design.png",
+          icon: "../../src/assets/img/icons/services/graphics-design.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
