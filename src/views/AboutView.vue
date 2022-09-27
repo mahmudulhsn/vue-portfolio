@@ -78,7 +78,6 @@ export default {
   data() {
     return {
       title: "About Me",
-      myImage: `${window.location.origin}/src/assets/img/image.svg`,
       subHeading:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue libero eleifend ullamcorper vestibulum. velit enim risus purus eu molestie lobortis pellentesque.",
       experiences: [
