@@ -38,7 +38,7 @@
                 <div class="skew-before">
                   <img
                     class="my-6"
-                    src="../../src/assets/img/icons/call-me.svg"
+                    src="../../src/assets/img/icons/call-me.png"
                     alt=""
                   />
                 </div>
@@ -62,7 +62,7 @@
                 <div class="">
                   <img
                     class="my-6"
-                    src="../../src/assets/img/icons/email-me.svg"
+                    src="../../src/assets/img/icons/email-me.png"
                     alt=""
                   />
                 </div>
