@@ -48,42 +48,42 @@ export default {
         {
           id: 1,
           title: "UI/UX Design",
-          icon: "../../src/assets/img/icons/services/ui-ux.png",
+          icon: "ui-ux.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 2,
           title: "Website Design",
-          icon: "../../src/assets/img/icons/services/website.png",
+          icon: "website.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 3,
           title: "Web App Design",
-          icon: "../../src/assets/img/icons/services/web-apps.png",
+          icon: "web-apps.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 4,
           title: "App Design",
-          icon: "../../src/assets/img/icons/services/smartphone.png",
+          icon: "smartphone.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 5,
           title: "Creative Design",
-          icon: "../../src/assets/img/icons/services/creativity.png",
+          icon: "creativity.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 6,
           title: "Graphics Design",
-          icon: "../../src/assets/img/icons/services/graphics-design.png",
+          icon: "graphics-design.png",
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
