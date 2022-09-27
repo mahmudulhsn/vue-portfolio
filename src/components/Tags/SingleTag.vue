@@ -12,6 +12,7 @@
       cursor-pointer
       box-border
     "
+    :class="{ active: tag.name == currentTag }"
     >{{ tag.name }}</span
   >
 </template>
@@ -22,6 +23,10 @@ export default {
     tag: {
       type: Object,
       default: "",
+    },
+    currentTag: {
+      type: String,
+      default: "All",
     },
   },
   methods: {
@@ -40,5 +45,11 @@ export default {
 }
 .tag {
   bottom: 10;
+}
+
+.active {
+  color: #2d373d;
+  background: #ff9e2b;
+  border: 1px solid #ff9e2b;
 }
 </style>

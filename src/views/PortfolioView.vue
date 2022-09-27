@@ -41,7 +41,7 @@
         </div> -->
         <div v-for="tag in tags" :key="tag.id">
           <div class="tag-div">
-            <SingleTag :tag="tag" />
+            <SingleTag :tag="tag" :currentTag="filteredTag" />
           </div>
         </div>
       </div>
