@@ -10,8 +10,8 @@
       bg-no-repeat bg-cover
     "
   >
-    <div class="">
-      <h1 class="text-center text-xl mb-10">Hello</h1>
+    <div class="text-center">
+      <h1 class="text-xl mb-10">Hello</h1>
       <h1 class="text-5xl">I Am A UI/UX Designer.</h1>
       <ul class="flex mt-10 justify-center skills">
         <li class="px-3 py-2">App Design</li>
@@ -76,5 +76,11 @@ export default {
   width: 100%;
   height: 100%;
   z-index: -2;
+}
+
+@media (max-width: 640px) {
+  .skills {
+    font-size: 14px;
+  }
 }
 </style>
