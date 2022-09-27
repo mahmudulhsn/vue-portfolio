@@ -8,7 +8,7 @@
 
       <div class="about-me flex mt-10 space-x-8">
         <div class="about-me-image w-1/2">
-          <img :src="myImage" alt="My Image" />
+          <img src="../../src/assets/img/image.png" alt="My Image" />
         </div>
         <div class="about-me-details w-1/2 flex justify-content items-center">
           <div>
