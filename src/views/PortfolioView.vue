@@ -58,6 +58,18 @@ import PageTitle from "../components/Helper/PageHeading.vue";
 import PageSubHeading from "../components/Helper/PageSubHeading.vue";
 import SingleTag from "../components/Tags/SingleTag.vue";
 import PortfolioList from "../components/Portfolios/PortfolioList.vue";
+import portfolioOne from "../../src/assets/img/portfolios/portfolio-1.png";
+import portfolioTwo from "../../src/assets/img/portfolios/portfolio-2.png";
+import portfolioThree from "../../src/assets/img/portfolios/portfolio-3.png";
+import portfolioFour from "../../src/assets/img/portfolios/portfolio-4.png";
+import portfolioFive from "../../src/assets/img/portfolios/portfolio-5.png";
+import portfolioSix from "../../src/assets/img/portfolios/portfolio-6.png";
+import portfolioSeven from "../../src/assets/img/portfolios/portfolio-7.png";
+import portfolioEight from "../../src/assets/img/portfolios/portfolio-8.png";
+import portfolioNine from "../../src/assets/img/portfolios/portfolio-9.png";
+import portfolioTen from "../../src/assets/img/portfolios/portfolio-10.png";
+import portfolioEleven from "../../src/assets/img/portfolios/portfolio-11.png";
+import portfolioTwelve from "../../src/assets/img/portfolios/portfolio-12.png";
 export default {
   components: {
     PageTitle,
@@ -100,73 +112,73 @@ export default {
           id: 1,
           name: "Website Design",
           category: "Website Design",
-          image: "../../src/assets/img/portfolios/portfolio-1.png",
+          image: portfolioOne,
         },
         {
           id: 2,
           name: "Website Design",
           category: "Web App Design",
-          image: "../../src/assets/img/portfolios/portfolio-2.png",
+          image: portfolioTwo,
         },
         {
           id: 3,
           name: "Website Design",
           category: "Graphics Design",
-          image: "../../src/assets/img/portfolios/portfolio-3.png",
+          image: portfolioThree,
         },
         {
           id: 4,
           name: "Website Design",
           category: "Website Design",
-          image: "../../src/assets/img/portfolios/portfolio-4.png",
+          image: portfolioFour,
         },
         {
           id: 5,
           name: "Website Design",
           category: "Apps Design",
-          image: "../../src/assets/img/portfolios/portfolio-5.png",
+          image: portfolioFive,
         },
         {
           id: 6,
           name: "Website Design",
           category: "Apps Design",
-          image: "../../src/assets/img/portfolios/portfolio-6.png",
+          image: portfolioSix,
         },
         {
           id: 7,
           name: "Website Design",
           category: "Web App Design",
-          image: "../../src/assets/img/portfolios/portfolio-7.png",
+          image: portfolioSeven,
         },
         {
           id: 8,
           name: "Website Design",
           category: "Website Design",
-          image: "../../src/assets/img/portfolios/portfolio-8.png",
+          image: portfolioEight,
         },
         {
           id: 9,
           name: "Website Design",
           category: "Web App Design",
-          image: "../../src/assets/img/portfolios/portfolio-9.png",
+          image: portfolioNine,
         },
         {
           id: 10,
           name: "Website Design",
           category: "Apps Design",
-          image: "../../src/assets/img/portfolios/portfolio-10.png",
+          image: portfolioTen,
         },
         {
           id: 11,
           name: "Website Design",
           category: "Graphics Design",
-          image: "../../src/assets/img/portfolios/portfolio-7.png",
+          image: portfolioEleven,
         },
         {
           id: 12,
           name: "Website Design",
           category: "Apps Design",
-          image: "../../src/assets/img/portfolios/portfolio-12.png",
+          image: portfolioTwelve,
         },
       ],
     };
