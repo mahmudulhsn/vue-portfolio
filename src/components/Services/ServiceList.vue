@@ -11,7 +11,7 @@
       md:gap-4
     "
   >
-    <div v-for="service in services" :key="service.id">
+    <div v-for="(service, index) in services" :key="index">
       <SingleService :service="service" />
     </div>
   </div>
