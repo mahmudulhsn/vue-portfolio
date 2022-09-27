@@ -33,6 +33,12 @@
 import PageTitle from "../components/Helper/PageHeading.vue";
 import PageSubHeading from "../components/Helper/PageSubHeading.vue";
 import ServiceList from "../components/Services/ServiceList.vue";
+import uiux from "../assets/img/services/ui-ux.png";
+import website from "../assets/img/services/website.png";
+import webApps from "../assets/img/services/web-apps.png";
+import smartphone from "../assets/img/services/smartphone.png";
+import creativity from "../assets/img/services/creativity.png";
+import graphicsDesign from "../assets/img/services/graphics-design.png";
 export default {
   components: {
     PageTitle,
@@ -48,42 +54,42 @@ export default {
         {
           id: 1,
           title: "UI/UX Design",
-          icon: "ui-ux.png",
+          icon: uiux,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 2,
           title: "Website Design",
-          icon: "website.png",
+          icon: website,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 3,
           title: "Web App Design",
-          icon: "web-apps.png",
+          icon: webApps,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 4,
           title: "App Design",
-          icon: "smartphone.png",
+          icon: smartphone,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 5,
           title: "Creative Design",
-          icon: "creativity.png",
+          icon: creativity,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
         {
           id: 6,
           title: "Graphics Design",
-          icon: "graphics-design.png",
+          icon: graphicsDesign,
           description:
             "Lorem ipsum dolor sit amet consectetur adipiscing elit. tincidunt Eget tincidunt nisi ridiculus.",
         },
