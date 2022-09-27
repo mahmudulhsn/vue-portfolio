@@ -12,7 +12,7 @@
       cursor-pointer
     "
   >
-    <div class="service-icon"><img :src="service.icon" alt="Logo" /></div>
+    <div class="service-icon"><img :src="`../../src/assets/img/icons/services/${service.icon}`" alt="Logo" /></div>
     <h1 class="text-lg my-4 font-bold">{{ service.title }}</h1>
     <p class="text-sm">{{ service.description }}</p>
   </div>
