@@ -43,7 +43,7 @@
                   />
                 </div>
               </div>
-              <h3 class="text-xl my-1">Email Me</h3>
+              <h3 class="text-xl my-1">Call Me</h3>
               <h4 class="text-sm">0031 588 9581</h4>
               <h4 class="text-default">(WhatsApp)</h4>
             </div>
